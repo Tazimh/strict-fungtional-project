@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/* Global Css here */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container{
+width: 1120px;
+}
+/* Navbar css */
+.navbar{
+    width: 100%;
+    height: 95px;
+    background: #f6f9f9;
+    padding: 15px 0;
+}
+.navbar .nav-item .active {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 16px;
+    text-transform: uppercase;
+    background-color: #15a4fa;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 3px;
+    transition: 1s;
+}
+.navbar .nav-item .active:hover {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 16px;
+    text-transform: uppercase;
+    background-color: transparent !important;
+    border: 1px solid #15a4fa;
+    color: #2d3950 !important;
+    padding: 10px 20px !important;
+    border-radius: 3px;
+    transition: 1s;
+}
+.menu-bar{
+    width: 100%;
+    Position: sticky !important;
+    Top: 0;
+    Z-index: 9999;
+}
+.navbar .nav-item .nav-link {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 900 !important;
+    margin-left: 15px;
+    color: #2d3950;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: 1s;
+}
+.navbar .nav-item .nav-link:hover{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 900 !important;
+    margin-left: 15px;
+    padding: 10px 20px !important;
+    background-color: #15a4fa;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: 1s;
+}
+/* slider section css */
+.slider-section{
+    width: 100%;
+    height: 85vh;
+    background-image: url(Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-section .slider-inner h1{
+    font-size: 110px;
+    padding-left: 442px;
+    padding-top: 90px;
+    line-height: 90px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slider-section .slider-inner .underline{
+    width: 46%;
+    height: 2px;
+    margin: 35px auto;
+    background-color: #15a4fa;
+}
+.slider-section .slider-inner p{
+    font-size: 19px;
+    line-height: 26px;
+    padding-left: 400px;
+    color: #fff;
+    margin: -12px 0px 25px;
+}
+.slider-section .slider-inner .call-btn a{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    border-radius: 3px;
+    margin: 25px 0;
+    display: inline-block;
+    transition: 1s;
+}
+.slider-section .slider-inner .call-btn a:hover{
+    padding: 10px 35px;
+    background-color: #15a4fa;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    border-radius: 3px;
+    margin: 25px 0;
+    display: inline-block;
+    transition: 1s;
+}
+.slider-section .slider-inner .call-btn{
+    padding-left: 545px;
+}
+
+.slider-section .slider-inner .arrow{
+    padding: 135px 620px;
+}
+/* simple section css */
+.simple-section{
+    width: 100%;
+    height: 40vh;
+    background-color: #f6f9f9;
+}
+.simple-section h2{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #2d3950;
+    margin-bottom: 15px;
+    padding-right: 30px;
+    padding-top: 80px;
+}
+.simple-section p{
+    width: 61%;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    margin: 0 auto;
+}
+/* layout section css */
+.layout-section{
+    width: 100%;
+    height: 55vh ;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 105px;
+    height: 105px;
+    border: none;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    transform: rotateY(180deg);
+  }
+  .layout-section .control{
+    margin-left: 880px;
+  }
+  .layout-section.control-2{
+    margin-left: -40px;
+    position: relative;
+    z-index: 99;
+  }
+  .layout-section .content-inner h4{
+    padding-right: 44px;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 700px !important;
+    color: #2d3950;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  .layout-section .content-inner p{
+    width: 88%;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+  }
+  /* showcase section css */
+  .showcase-section{
+    width: 100%;
+    height: 120vh;
+    background-color: #f6f9f9;
+  }
+  .showcase-section h2 {
+    padding-top: 60px;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #2d3950;
+    margin-bottom: 8px;
+}
+.showcase-section p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    padding-bottom: 70px;
+}
+ .background{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -275px 65px 0px;
+ }
+.bac-img {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img .b1 img{
+    padding-top: 110px;
+}
+.background:hover .bac-img{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* background-2 */
+
+.background-2{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -260px 0px 0px;
+ }
+.bac-img-2 {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img-2 .b2 img{
+    padding-top: 110px;
+}
+.background-2:hover .bac-img-2{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* background-3 */
+
+.background-3{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -261px -65px 0px;
+ }
+.bac-img-3 {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img-3 .b3 img{
+    padding-top: 110px;
+}
+.background-3:hover .bac-img-3{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* background-4 */
+.background-4{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -260px 65px 0px;
+ }
+.bac-img-4 {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img-4 .b4 img{
+    padding-top: 110px;
+}
+.background-4:hover .bac-img-4{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* background-5 */
+.background-5{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -260px 0px 0px;
+ }
+.bac-img-5 {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img-5 .b5 img{
+    padding-top: 110px;
+}
+.background-5:hover .bac-img-5{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* background-6 */
+.background-6{
+    position: relative;
+    z-index: 99;
+    width: 360px;
+    height: 260px;
+    margin: -260px -65px 0px;
+ }
+.bac-img-6 {
+    display: flex;
+    position: relative;
+    top: 0px;
+    z-index: 15;
+    padding-left: 133px;
+    opacity: 00;
+}
+.bac-img-6 .b6 img{
+    padding-top: 110px;
+}
+.background-6:hover .bac-img-6{
+    width: 360px;
+    height: 260px;
+opacity: .5;
+background-color: #15a4fa;
+}
+/* contact-box css */
+.contact-box{
+    width: 100%;
+    height: 90vh;
+    background: url(bg.png) center center no-repeat;
+}
+.contact-box .title h2 {
+    padding-top: 80px;
+    padding-left: 535px;
+    font-size: 34px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.contact-box .title p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+    padding-left: 540px;
+    padding-bottom: 70px;
+}
+.f-control .name-2{
+    width: 60%;
+    height: 50px;
+}
+.f-control .mail-1{
+    width: 60%;
+    height: 50px;
+}
+.f-control .msg-1{
+    width: 60%;
+}
+.f-control .name-2{
+    padding: 25px 15px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.f-control .mail-1{
+    padding: 25px 15px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.f-control .msg-1{
+    padding: 25px 15px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.w-full .bttn{
+    position: relative;
+    z-index: 999;
+    padding-left: 307px;
+    top: -30px;
+}
+.bttn a{
+    padding: 8px 45px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    font-weight: 500px;
+    border-radius: 3px;
+    margin: 0px 0px 0px 137px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+}
+/* footer css */
+.footer-section {
+    width: 100%;
+    padding: 15px 0px 15px;
+}
+.footer-section .designer p{
+    width: 100%;
+    margin-top: 30px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-section .icons ul {
+    width: 100%;
+    display: block;
+    margin: 20px 0px 0px;
+    padding: 0;
+}
+.footer-section .icons ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2px;
+}
